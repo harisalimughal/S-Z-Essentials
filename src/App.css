@@ -29937,6 +29937,89 @@ background-color: #f3f6ff;
 
 /* FAQ */
 
+.feedback-section {
+  margin: 40px 0 30px;
+}
+
+.feedback-carousel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  margin: 24px 0 12px;
+}
+
+.feedback-nav {
+  border: none;
+  background: #2e7d32;
+  color: #fff;
+  border-radius: 50%;
+  width: 42px;
+  height: 42px;
+  font-size: 24px;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(46, 125, 50, 0.2);
+}
+
+.feedback-nav:hover {
+  background: #256b28;
+}
+
+.feedback-card {
+  background: linear-gradient(135deg, #f8fff8, #eef7ee);
+  border: 1px solid #d7ebd0;
+  border-radius: 18px;
+  padding: 24px;
+  max-width: 520px;
+  width: 100%;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+  text-align: center;
+}
+
+.feedback-stars {
+  color: #f4b400;
+  font-size: 1.1rem;
+  letter-spacing: 2px;
+  margin-bottom: 12px;
+}
+
+.feedback-review {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #444;
+  margin-bottom: 16px;
+}
+
+.feedback-author {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  color: #2e7d32;
+  font-size: 0.95rem;
+}
+
+.feedback-dots {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.feedback-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: none;
+  background: #c8e6c9;
+  cursor: pointer;
+  padding: 0;
+}
+
+.feedback-dot.active {
+  background: #2e7d32;
+  transform: scale(1.15);
+}
+
 /* FAQ.css */
 .faq-container {
   max-width: 800px;

@@ -34,14 +34,93 @@ const FAQ = () => {
     },
   ];
 
+  const feedbackData = [
+    {
+      name: "Aarav Sharma",
+      role: "Regular shopper",
+      rating: 5,
+      review:
+        "The app makes grocery shopping feel effortless. Delivery was fast, fresh, and the checkout experience was seamless.",
+    },
+    {
+      name: "Meera Patel",
+      role: "Busy parent",
+      rating: 5,
+      review:
+        "I love the convenience of ordering essentials in minutes. The quality of produce is consistently excellent.",
+    },
+    {
+      name: "Rohan Verma",
+      role: "Weekend buyer",
+      rating: 4,
+      review:
+        "Great variety, fair prices, and helpful recommendations. It has become my go-to store for weekly groceries.",
+    },
+  ];
+
   const [openIndex, setOpenIndex] = useState(null);
+  const [activeFeedbackIndex, setActiveFeedbackIndex] = useState(0);
 
   const toggle = (index) => {
     setOpenIndex(openIndex === index ? null : index);
   };
 
+  const showPreviousFeedback = () => {
+    setActiveFeedbackIndex((prevIndex) =>
+      prevIndex === 0 ? feedbackData.length - 1 : prevIndex - 1
+    );
+  };
+
+  const showNextFeedback = () => {
+    setActiveFeedbackIndex((prevIndex) =>
+      prevIndex === feedbackData.length - 1 ? 0 : prevIndex + 1
+    );
+  };
+
+  const activeFeedback = feedbackData[activeFeedbackIndex];
+
   return (
     <div className="faq-container">
+      <div className="feedback-section">
+        <div className="section-head text-center mt-8">
+          <h2 className="h3style" style={{ color: "green" }} data-title="Customer Feedback">
+            Customer Feedback
+          </h2>
+          <div className="wt-separator bg-primarys"></div>
+          <div className="wt-separator2 bg-primarys"></div>
+        </div>
+
+        <div className="feedback-carousel">
+          <button className="feedback-nav" onClick={showPreviousFeedback} aria-label="Previous feedback">
+            ‹
+          </button>
+          <div className="feedback-card">
+            <div className="feedback-stars" aria-label={`Rated ${activeFeedback.rating} out of 5 stars`}>
+              {"★".repeat(activeFeedback.rating)}{"☆".repeat(5 - activeFeedback.rating)}
+            </div>
+            <p className="feedback-review">“{activeFeedback.review}”</p>
+            <div className="feedback-author">
+              <strong>{activeFeedback.name}</strong>
+              <span>{activeFeedback.role}</span>
+            </div>
+          </div>
+          <button className="feedback-nav" onClick={showNextFeedback} aria-label="Next feedback">
+            ›
+          </button>
+        </div>
+
+        <div className="feedback-dots">
+          {feedbackData.map((_, index) => (
+            <button
+              key={index}
+              className={`feedback-dot ${activeFeedbackIndex === index ? "active" : ""}`}
+              onClick={() => setActiveFeedbackIndex(index)}
+              aria-label={`Show feedback ${index + 1}`}
+            />
+          ))}
+        </div>
+      </div>
+
       <div className="row">
         <div className="col-md-12 mb-6">
           <div className="section-head text-center mt-8">
@@ -50,7 +129,6 @@ const FAQ = () => {
             </h1>
             <div className="wt-separator bg-primarys"></div>
             <div className="wt-separator2 bg-primarys"></div>
-            {/* <p>Connecting with entrepreneurs online, is just a few clicks away.</p> */}
           </div>
         </div>
       </div>

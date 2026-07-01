@@ -229,7 +229,7 @@ const Header = () => {
           <Link className="navbar-brand" to="/Grocery-react/">
             <img
               src={Grocerylogo}
-              style={{ width: 200, marginBottom: 10, marginLeft: "-15px" }}
+              style={{ width: 100, marginBottom: 5, marginLeft: "-5px" }}
               alt="eCommerce HTML Template"
             />
           </Link>

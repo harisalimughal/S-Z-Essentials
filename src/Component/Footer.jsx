@@ -24,49 +24,28 @@ const Footer = () => {
                     <Link to="/">
                       <img
                         src={groceryshop}
-                        style={{ width: 300, padding: 20, marginLeft: "-30px" }}
+                        style={{ width: 120, padding: 8, marginLeft: "8px" }}
                         alt="logo"
                       />
                     </Link>
                   </div>
-                  <p className="mb-30">
+                  <p className="mb-20">
                     We deliver more than your expectations and help you to grow
                     your business exponentially by providing customized
                     applications. So, don’t just think, get ready to convert
                     your ideas into reality.
                   </p>
+                  <ul className="list-unstyled mb-30">
+                    <li className="mb-2">
+                      <i className="fa fa-map-marker-alt me-2" /> 27611 Sierra
+                      Willow Way Katy TX, USA 77494
+                    </li>
+                    <li>
+                      <i className="fa fa-phone-alt me-2" /> (512) 463-5555
+                    </li>
+                  </ul>
                 </div>
                 <div className="dimc-protect">
-                  <div className="col-lg-5 text-lg-start text-center mb-2 mb-lg-0">
-                    <h4>Payment Partners</h4>
-                    <ul className="list-inline d-flex mb-0">
-                      <li className="list-inline-item">
-                        <Link to="#!">
-                          <img src={amazonpay} alt="footerfreshcart" />
-                        </Link>
-                      </li>
-                      <li className="list-inline-item">
-                        <Link to="#!">
-                          <img src={american} alt="footerfreshcart" />
-                        </Link>
-                      </li>
-                      <li className="list-inline-item">
-                        <Link to="#!">
-                          <img src={mastercard} alt="footerfreshcart" />
-                        </Link>
-                      </li>
-                      <li className="list-inline-item">
-                        <Link to="#!">
-                          <img src={paypal} alt="footerfreshcart" />
-                        </Link>
-                      </li>
-                      <li className="list-inline-item">
-                        <Link to="#!">
-                          <img src={visa} alt="footerfreshcart" />
-                        </Link>
-                      </li>
-                    </ul>
-                  </div>
                 </div>
               </div>
               <div className="col-sm-6 col-lg-3 mb-30">
@@ -315,7 +294,7 @@ const Footer = () => {
                     to="https://nigammishra.github.io/nigam-portfolio/"
                     target="_blank"
                   >
-                     @nigammishra
+                   S&Z Essentials
                   </Link>
                 </div>
               </div>
