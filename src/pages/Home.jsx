@@ -344,7 +344,7 @@ const Home = () => {
                             {/* text */}
                             <div className="ms-lg-4">
                               <h1 className="fs-2 mb-1">
-                                Welcome to FreshCart
+                                Welcome to S&Z Essentials
                               </h1>
                               <span>
                                 Download the app get free food &amp;{" "}
@@ -356,7 +356,7 @@ const Home = () => {
                           <div className="mt-3 mt-lg-0">
                             {/* btn */}
                             <Link to="#" className="btn btn-dark">
-                              Download FreshCart App
+                              Download S&Z Essentials App
                             </Link>
                           </div>
                         </div>
@@ -867,7 +867,7 @@ const Home = () => {
                         <div className="mb-6">
                           <div className="mb-7">
                             {/* heading */}
-                            <h1>Get the FreshCart app</h1>
+                            <h1>Get the S&Z Essentials app</h1>
                             <h5 className="mb-0">
                               We will send you a link, open it on your phone to
                               download the app.
@@ -1560,7 +1560,7 @@ const Home = () => {
                               <h3 className="h5 mb-3">10 minute grocery now</h3>
                               <p>
                                 Get your order delivered to your doorstep at the
-                                earliest from FreshCart pickup
+                                earliest from S&Z Essentials pickup
                                 <p> stores near you.</p>
                               </p>
                             </div>

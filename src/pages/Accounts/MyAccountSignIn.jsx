@@ -38,16 +38,16 @@ const MyAccountSignIn = () => {
                   {/* img */}
                   <img
                     src={signinimage}
-                    alt="freshcart"
+                    alt="S&Z Essentials"
                     className="img-fluid"
                   />
                 </div>
                 {/* col */}
                 <div className="col-12 col-md-6 offset-lg-1 col-lg-4 order-lg-2 order-1">
                   <div className="mb-lg-9 mb-5">
-                    <h1 className="mb-1 h2 fw-bold">Sign in to FreshCart</h1>
+                    <h1 className="mb-1 h2 fw-bold">Sign in to S&Z Essentials</h1>
                     <p>
-                      Welcome back to FreshCart! Enter your email to get
+                      Welcome back to S&Z Essentials! Enter your email to get
                       started.
                     </p>
                   </div>
